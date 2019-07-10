@@ -1,0 +1,25 @@
+# THESE VALUES CAN BE MANAGED WITHIN THE WORKSPACE ITSELF
+# The Values are unchanging in the 'Master' Workspace
+
+token = "my-token-here"
+
+organization = "terraform-enterprise-client-demo"
+
+vcs_repo = "my-org/my-repo"
+
+oauth_token_id = "my-token-here"
+
+
+# The Values can be changed for use in the newly-created Workspace
+# Additional values could be added here (ex. branch, etc.)
+
+workspace_name = "my-new-workspace"
+
+
+tfe_vars_sensitive = {
+    test = "foo"
+}
+
+env_vars_sensitive  = {
+    CONFIRM_DESTROY = "1"
+}
